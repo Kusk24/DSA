@@ -17,7 +17,7 @@ def tuple(e):
 
 def MST_Krukal(G):
     A = 0
-    s = DisjointSets(V)
+    s = DisjointSets(G.V)
     G.E.sort(key = tuple, reverse = False)
     for i in G.E:
         if s.findset(i[0]) != s.findset(i[1]):

@@ -3,6 +3,9 @@
 #Section - 542
 
 import sys
+
+from Week7.BinarySearchTree import BSTree
+
 sys.setrecursionlimit(10001)
 
 root = None        
@@ -151,40 +154,55 @@ def print_BSTree (root) :
     printCall( root , "" , True )
 
 
-Tree_Insert(node(30, ""))
+# Tree_Insert(node(30, ""))
+# Tree_Insert(node(5, ""))
+# Tree_Insert(node(17, ""))
+# Tree_Insert(node(23, ""))
+# Tree_Insert(node(2, ""))
+# Tree_Insert(node(76, ""))
+# Tree_Insert(node(42, ""))
+# Tree_Insert(node(57, ""))
+# Tree_Insert(node(12, ""))
+# Tree_Insert(node(25, ""))
+# Tree_Insert(node(36, ""))
+#
+# print_BSTree(root)
+#
+# minimum = Tree_Minimum(root)
+# print("The minimum key is: ", minimum.key)
+# maximum = Tree_Maximum(root)
+# print("The maximum key is: ", maximum.key)
+#
+# if Tree_Search(12):
+#     print("There is ",Tree_Search(12).key," in the tree")
+# else:
+#     print("Not Found")
+#
+# successor = Tree_Successor(42)
+# print("The successor is: ", successor.key)
+#
+# predecessor = Tree_Predecessor(42)
+# print("The predecessor is: ", predecessor.key)
+#
+# print("Deleted,", Tree_Delete(12), "from the tree")
+# print_BSTree(root)
+#
+# if Tree_Search(12):
+#     print("There is ",Tree_Search(12).key," in the tree")
+# else:
+#     print("Not Found")
+
+Tree_Insert(node(85, ""))
+Tree_Insert(node(19, ""))
+Tree_Insert(node(4, ""))
 Tree_Insert(node(5, ""))
-Tree_Insert(node(17, ""))
-Tree_Insert(node(23, ""))
-Tree_Insert(node(2, ""))
-Tree_Insert(node(76, ""))
+Tree_Insert(node(34, ""))
+Tree_Insert(node(180, ""))
 Tree_Insert(node(42, ""))
-Tree_Insert(node(57, ""))
-Tree_Insert(node(12, ""))
-Tree_Insert(node(25, ""))
-Tree_Insert(node(36, ""))
- 
 print_BSTree(root)
 
-minimum = Tree_Minimum(root)
-print("The minimum key is: ", minimum.key)
-maximum = Tree_Maximum(root)
-print("The maximum key is: ", maximum.key)
-
-if Tree_Search(12):
-    print("There is ",Tree_Search(12).key," in the tree")
-else:
-    print("Not Found")
-
-successor = Tree_Successor(42)
-print("The successor is: ", successor.key)
-
-predecessor = Tree_Predecessor(42)
-print("The predecessor is: ", predecessor.key)
-
-print("Deleted,", Tree_Delete(12), "from the tree")
+Tree_Delete(19)
 print_BSTree(root)
 
-if Tree_Search(12):
-    print("There is ",Tree_Search(12).key," in the tree")
-else:
-    print("Not Found")
+Tree_Delete(85)
+print_BSTree(root)

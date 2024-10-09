@@ -32,8 +32,6 @@ for token in postfix_expr:
             Stack.append(b % a)
         elif token == "^":
             Stack.append(pow(b,a))
-            
-        
         
         
 print('%.1f' % Stack[0])

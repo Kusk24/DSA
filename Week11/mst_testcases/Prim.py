@@ -90,6 +90,6 @@ G.add_vertices(vertices)
 mst_weight, mst_edges = MST_Prim(G, G.vertices[0])
 
 print("Total MST weight is =", mst_weight)
-print(G.vertices[0].value, end = " ")
+# print(G.vertices[0].value, end = " ")
 # for i in mst_edges:
 #     print( i.vertex, end = " ")

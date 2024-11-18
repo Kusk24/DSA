@@ -43,8 +43,8 @@ def MST_Prim(graph, start):
         Q.insert(edge)
 
     while not Q.empty():
-        smallest_edge = Q.extract()
-        next_Vertex = graph.vertices[smallest_edge.vertex]
+        smallest_edge = Q.extract() #index
+        next_Vertex = graph.vertices[smallest_edge.vertex] #to return vertex object
 
         if next_Vertex.in_tree:
             continue
@@ -69,9 +69,11 @@ for i in range(E):
 G = Graph()
 vertices = []
 
+#make object vertex and added to list
 for i in range(V):
     vertices.append(Vertex(i))
 
+#add edge to vertex
 for i in range(len(edgeList)):
     u = edgeList[i][0]
     v = edgeList[i][1]
